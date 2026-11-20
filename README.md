@@ -40,8 +40,8 @@ confirmation before each run. More on the MCP server: [Remote MCP server](https:
 
 ## Development
 
-- The skills here are also used by Steadybit's plugin for ChatGPT and Codex, whose build copies them from this
-  repository. Keep them free of anything Claude-specific.
+- Steadybit's plugin for ChatGPT and Codex (an internal repository) ships a copy of the same skills. Keep them free of
+  anything Claude-specific, and carry a change over to that copy.
 - Validate before releasing: `claude plugin validate . --strict --profile directory`. CI runs the same on every push
   and pull request (`.github/workflows/validate.yml`); it needs no login.
 - To try a change against Steadybit's dev platform, run `claude --plugin-dir .` with the URL in `.mcp.json` temporarily
