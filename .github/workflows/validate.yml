@@ -1,0 +1,24 @@
+name: Validate plugin
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+      # Latest on purpose: the directory checks change with Claude Code, and we want the ones the directory uses now.
+      # No login needed: validate runs offline.
+      - run: npm install -g @anthropic-ai/claude-code
+      # --profile directory also fails when the plugin directory would refuse a submission (missing icon, README,
+      # privacy policy, ...); --strict alone lets those through.
+      - run: claude plugin validate . --strict --profile directory

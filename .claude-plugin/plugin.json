@@ -1,0 +1,19 @@
+{
+  "name": "steadybit",
+  "version": "0.1.0",
+  "description": "Explore your systems, assess service reliability, design and run chaos experiments, and explain experiment runs in Steadybit.",
+  "author": {
+    "name": "Steadybit",
+    "url": "https://steadybit.com"
+  },
+  "homepage": "https://docs.steadybit.com/integrate-with-steadybit/remote-mcp-server",
+  "repository": "https://github.com/steadybit/ai-plugin-claude",
+  "license": "MIT",
+  "privacyPolicyUrl": "https://steadybit.com/imprint/",
+  "keywords": [
+    "steadybit",
+    "chaos engineering",
+    "reliability",
+    "experiments"
+  ]
+}

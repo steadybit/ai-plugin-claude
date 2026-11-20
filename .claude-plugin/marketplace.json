@@ -1,0 +1,15 @@
+{
+  "name": "steadybit",
+  "description": "Steadybit's plugin for Claude: chaos engineering and reliability work with your Steadybit account.",
+  "owner": {
+    "name": "Steadybit",
+    "url": "https://steadybit.com"
+  },
+  "plugins": [
+    {
+      "name": "steadybit",
+      "source": "./",
+      "description": "Explore your systems, assess service reliability, design and run chaos experiments, and explain experiment runs in Steadybit."
+    }
+  ]
+}
