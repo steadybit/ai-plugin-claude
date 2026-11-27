@@ -38,15 +38,6 @@ Then run `/mcp`, pick `steadybit` and sign in, or start with `/steadybit:get-sta
 Every action uses your own Steadybit permissions, and running an experiment injects real faults, so Claude asks for
 confirmation before each run. More on the MCP server: [Remote MCP server](https://docs.steadybit.com/integrate-with-steadybit/remote-mcp-server).
 
-## Development
-
-- Steadybit's plugin for ChatGPT and Codex (an internal repository) ships a copy of the same skills. Keep them free of
-  anything Claude-specific, and carry a change over to that copy.
-- Validate before releasing: `claude plugin validate . --strict --profile directory`. CI runs the same on every push
-  and pull request (`.github/workflows/validate.yml`); it needs no login.
-- To try a change against Steadybit's dev platform, run `claude --plugin-dir .` with the URL in `.mcp.json` temporarily
-  set to `https://platform.dev.steadybit.com/mcp`.
-
 ## License
 
 [MIT](LICENSE)
